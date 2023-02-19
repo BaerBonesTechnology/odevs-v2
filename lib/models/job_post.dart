@@ -1,6 +1,3 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-
 class JobPost {
   final String jobTitle;
   final String companyName;

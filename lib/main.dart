@@ -1,5 +1,4 @@
 import 'package:ODevs/firebase_options.dart';
-import 'package:ODevs/util/database_helper.dart';
 import 'package:ODevs/util/navigation.dart' as nav;
 import 'package:device_preview/device_preview.dart';
 import 'package:firebase_core/firebase_core.dart';

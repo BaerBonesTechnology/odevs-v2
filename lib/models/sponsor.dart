@@ -28,4 +28,6 @@ class Sponsor {
       url: data['url'],
     );
   }
+
+
 }
