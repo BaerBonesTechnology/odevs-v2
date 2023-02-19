@@ -12,4 +12,22 @@ class Sponsor {
       url: json['url'],
     );
   }  
+
+  Map<String, dynamic> toJson() {
+    return {
+      'name': name,
+      'logo': logo,
+      'url': url,
+    };
+  }
+
+  factory Sponsor.fromMap(Map<String, dynamic> data) {
+    return Sponsor(
+      name: data['name'],
+      logo: data['logo'],
+      url: data['url'],
+    );
+  }
+
+
 }

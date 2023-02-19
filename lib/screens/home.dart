@@ -1,21 +1,16 @@
+import 'package:ODevs/util/devicemanager.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 
-import '../custom/common_ui.dart';
+import 'home/mobile_home.dart';
+import 'home/web_home.dart';
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-
-  @override
   Widget build(BuildContext context) {
-    return const ScreenFormat(children: [
-      Text("this is the home screen")
-    ]);
+    return DeviceManager(context).isWeb()
+    ? WebHome()
+    : const MobileHome();
   }
 }

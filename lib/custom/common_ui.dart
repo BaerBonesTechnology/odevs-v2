@@ -86,16 +86,16 @@ class ScreenFormat extends StatelessWidget {
         child: ODNavBar(),
       ) : hideNavOnMobile ? null /*TODO: add app bar with back button */: null,
       backgroundColor: theme.primaryContent,
-      body: Center(
-        widthFactor: view
+      body: Container(
+        width: view
             .getScreenSize()
             .width,
-        heightFactor: view
+        height: view
             .getScreenSize()
             .height,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: children,
         ),
       ),
