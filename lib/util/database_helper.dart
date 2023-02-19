@@ -2,10 +2,12 @@ import 'package:ODevs/models/event_post.dart';
 import 'package:ODevs/models/job_post.dart';
 import 'package:ODevs/models/sponsor.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
+
+import '../firebase_options.dart';
 
 /// A class that contains all the methods that interact with the firebase database
 class DatabaseHelper {
-  /// private instance of the firebase database
 
   final FirebaseFirestore db = FirebaseFirestore.instance;
 
